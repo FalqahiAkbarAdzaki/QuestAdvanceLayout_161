@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -68,6 +69,15 @@ fun ActivitasPertama(modifier: Modifier){
                     modifier = Modifier
                         .size(100.dp)
                 )
+                Spacer(modifier = Modifier.width(50.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.nama)
+                        fontSize = 30.sp
+                        fontFamily = FontFamily.Cursive
+                        color = Color.White
+                    )
+                }
             }
         }
     }

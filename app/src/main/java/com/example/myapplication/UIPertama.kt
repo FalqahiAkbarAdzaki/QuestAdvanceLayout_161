@@ -65,7 +65,7 @@ fun ActivitasPertama(modifier: Modifier){
                 val gambar = painterResource(R.drawable.logo_umy)
                 image(
                     painter = gambar
-                    contentDescription = null,
+                            contentDescription = null,
                     modifier = Modifier
                         .size(100.dp)
                 )
@@ -73,18 +73,22 @@ fun ActivitasPertama(modifier: Modifier){
                 Column() {
                     Text(
                         stringResource(R.string.nama)
-                        fontSize = 30.sp
-                        fontFamily = FontFamily.Cursive
-                        color = Color.White
-                        modifier = Modifier.padding(top = 15.dp)
+                                fontSize = 30.sp
+                                fontFamily = FontFamily . Cursive
+                                color = Color.White
+                                modifier = Modifier . padding (top = 15.dp)
                     )
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                ) {
                     Text(
                         stringResource(R.string.copy)
-                        modifier = Modifier
-                        align(Alignment.BottomCenter)
+                                modifier = Modifier
+                                . align (Alignment.BottomCenter)
+                            .padding(bottom = 50.dp)
                     )
                 }
             }
         }
-    }
-}

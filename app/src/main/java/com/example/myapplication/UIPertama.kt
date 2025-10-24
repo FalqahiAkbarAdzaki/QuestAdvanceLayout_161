@@ -79,7 +79,7 @@ fun ActivitasPertama(modifier: Modifier){
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
-                        
+                        stringResource(R.string.copy)
                     )
                 }
             }
